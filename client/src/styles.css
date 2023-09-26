@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+html,body,app-root{
+    height: 100%;
+    width: 100%;
+    margin:0;
+}
+
+body{
+    /* background: rgb(109,9,9);
+    background: linear-gradient(0deg, rgb(114, 28, 28) 0%, rgb(240, 130, 20) 23%, rgb(230, 170, 7) 59%, rgb(231, 219, 163) 82%); */
+    background-image:url('./assets//images/background.png');
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 

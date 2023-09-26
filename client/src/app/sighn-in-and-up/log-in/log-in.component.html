@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="centered">
+      <h1 id="demoFont">Log-in</h1>
+    <form  [formGroup]="userForm">
+      <!-- class="form-group p-3 mb-2 bg-primary text-white" -->
+        
+        <div>
+          <label class="css-input">
+            Email:
+              <input type="text"
+               class="form-control"
+                placeholder="Enter email"
+                 formControlName="email"/>
+          </label>
+          <ng-container *ngIf="emailTouched()">
+              <div *ngIf="checkIfNotValidEmail()" class="error" >
+                    Email is incorrect please add the elements "@.".
+              </div>
+          </ng-container>
+        </div>
+    
+        <div>
+            <label class="css-input">
+              Password:
+                <input type="password"
+                 class="form-control"
+                  placeholder="Enter password"
+                   formControlName="Password"/>
+            </label>
+          <ng-container *ngIf="PasswordTouched()">
+            <div *ngIf="!checkIfPasswordValid()" class="error">
+                      password is incorrect min lenght is 4 letters max 10.
+            </div>
+          </ng-container>
+        </div>
+        <div class="btns">
+            <button class="myButton" id="home" (click)="MoveToHomePage()" ><i class="fas fa-arrow-left"></i> <i class="fas fa-home"></i></button>
+            <button class="myButton" id="letIn" (click)="LogIn()" [disabled]="!AllowBtn()" >Let me in</button>
+        </div>    
+      </form>
+      </div>
+</div>
+
+
+
+
+

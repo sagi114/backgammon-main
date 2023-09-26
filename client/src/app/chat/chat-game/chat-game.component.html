@@ -1,0 +1,15 @@
+<div class="splitLeft split left">
+  <div class="gif" *ngIf="!accept">
+    <app-waiting-room></app-waiting-room>
+  </div>
+  <div *ngIf="accept">
+    <app-game [to] = "rivalToken"></app-game>
+  </div>
+  </div>
+  
+  <div class="splitRight split right">
+    <div class="containerChat">
+      <app-private-messege (UserToPlayWith)="GetPlayer($event)" [toToken]="rivalToken"></app-private-messege>
+      <!-- [to] = "selectedUser" -->
+    </div>
+  </div>

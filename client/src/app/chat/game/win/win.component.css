@@ -1,0 +1,13 @@
+.image{
+    height:100%;  width:100%;
+    background-image:url('../../../../assets/YouWin.jpg');
+    background-position:50% 50%;
+  }
+  .center {
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    /* border: 3px solid green; */
+    padding: 10px;
+    border-radius: 5px;
+  }

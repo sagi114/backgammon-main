@@ -1,0 +1,78 @@
+.container{
+  height: 100%;
+  position: relative;
+  /* border: 1px solid black;  */
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#demoFont {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  letter-spacing: 2px;
+  word-spacing: -4px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: capitalize;
+  }
+
+  .myButton {
+    box-shadow: 0px 10px 14px -7px #0a0a0a;
+    background-color:transparent;
+    border-radius:23px;
+    display:inline-block;
+    color:#000000;
+    font-family:Georgia;
+    font-size:20px;
+    font-weight:bold;
+    padding:10px 15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #999999;
+    margin-bottom: 10px;
+  }
+  #home:hover {
+    cursor:pointer;
+    background-color:rgb(180, 102, 102);
+  }
+  #letIn:hover:enabled{
+    cursor:pointer;
+    background-color: #8ed191;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+  .css-input {
+    padding: 1px;
+    font-size: 12px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: groove;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    margin-top: 5px;
+}
+.css-input:focus {
+    outline:none;
+}
+
+ .btns{
+   margin-top: 10px;
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ .error{
+   max-width: 200px;
+ }

@@ -1,0 +1,40 @@
+
+.Board{
+  height:100%;
+  width: 100%;
+}
+.Top{
+  display: flex;
+  /* margin-top: 3%; */
+  height: 40%;
+  width: 100%;
+  top: 0px;
+  position: relative;
+} 
+.Bottom{
+  display: flex;
+  height: 40%;
+  width: 100%;
+  bottom: 0px;
+  /* margin-left: 15%; */
+  position: relative;
+  
+}
+.center{
+  /* margin-left: 25%; */
+  margin-bottom: 1%;
+  margin-top: 1%;
+  background-color: rgb(199, 33, 33);
+  width: 30%;
+  /* height: 10%; */
+}
+.right{
+  background-color: #c072ce66;
+    padding: 30px;
+    border-radius: 5px;
+}
+.child {
+  margin: 0 auto;
+  text-align: center;
+}
+  

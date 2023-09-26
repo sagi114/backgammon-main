@@ -1,0 +1,26 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 30%;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container :nth-child(2){
+  background-color: rgba(20, 20, 20, 0.404);
+}
+
+  
+
+  .messege{
+    margin: auto;
+    padding: 10px;
+    z-index:900;
+    background-color: rgb(112,190,70)
+  }

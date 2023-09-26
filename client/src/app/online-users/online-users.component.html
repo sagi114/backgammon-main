@@ -1,0 +1,5 @@
+<div *ngFor="let user of connectedUsers">
+    <ul class="list-group">
+        <li class="list-group-item" (click)="onUserClick(user)"><p><strong><i class="fas fa-user"></i> {{user.token}}</strong></p></li>
+    </ul>
+</div>

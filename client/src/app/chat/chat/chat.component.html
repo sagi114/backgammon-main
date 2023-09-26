@@ -1,0 +1,12 @@
+<div>
+    <div style="display: flex;">
+        <button (click)="SendMessege()">Send messege</button>
+        <!-- <button (click)="emitRandom()">emit random</button> -->
+    </div>
+    <input [(ngModel)]="someMeesege"/>
+    <div *ngFor="let info of AllMessege; let i = index">
+        <div *ngIf="checkIfMessege(i)">{{info}}</div>
+        <h6 *ngIf="!checkIfMessege(i)">{{info}}</h6>
+        
+    </div>
+</div>

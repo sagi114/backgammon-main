@@ -1,0 +1,21 @@
+<div class="container">
+  <div>
+    <app-chat2 [to] = "selectedUser" [userName]="userName"></app-chat2>
+  </div>
+  <div >
+      <div class="messege splitTop" *ngIf="Confirm">
+        <div>
+        you have bean invited you to a game! Whould you like to play?
+          <!-- {{AcsseptName}} invited you to a game! Whould you like to play? -->
+      </div>
+      <div>
+        <button (click)="Accept()">Accept</button>
+        <button (click)="Deny()">Deny </button>
+      </div>
+      </div>
+      <app-logged-in (getPrivateRoom)="getPrivateRoom($event)" (inviteToGame)="inviteToGame($event)" [userAccepted]="accept" [connectedUsers]="connectedUsersList"></app-logged-in>
+  </div>
+</div>
+
+
+

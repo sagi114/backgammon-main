@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e23cf260-48bb-4200-b6d7-8d5ca9149fc0/resourceGroups/SOA_Project/providers/Microsoft.Web/sites/expressnode1",
+    "appService.deploySubpath": "."
+}
